@@ -16,10 +16,10 @@
   <path d="M35 44H1165" stroke="url(#g)" stroke-width="2" opacity=".18" class="dash"/>
   <g clip-path="url(#clip)">
     <rect x="-180" y="14" width="160" height="60" fill="url(#g)" opacity=".08" class="scan"/>
-    <text x="600" y="51" text-anchor="middle" class="mono line" font-size="17" fill="#67E8F9" filter="url(#glow)">PRODUCTION RAG // citations · reranking · guardrails</text>
-    <text x="600" y="51" text-anchor="middle" class="mono line l2" font-size="17" fill="#93C5FD" filter="url(#glow)">AGENTIC WORKFLOWS // tools · memory · human checkpoints</text>
-    <text x="600" y="51" text-anchor="middle" class="mono line l3" font-size="17" fill="#A5B4FC" filter="url(#glow)">SPEECH AI // Whisper · diarization · call intelligence</text>
-    <text x="600" y="51" text-anchor="middle" class="mono line l4" font-size="17" fill="#D8B4FE" filter="url(#glow)">CLOUD DELIVERY // Docker · AWS · Nginx · TLS</text>
+    <text x="600" y="51" text-anchor="middle" class="mono line" font-size="17" fill="#67E8F9" filter="url(#glow)">PRODUCTION RAG · citations · reranking · guardrails</text>
+    <text x="600" y="51" text-anchor="middle" class="mono line l2" font-size="17" fill="#93C5FD" filter="url(#glow)">AGENTIC WORKFLOWS · tools · memory · human checkpoints</text>
+    <text x="600" y="51" text-anchor="middle" class="mono line l3" font-size="17" fill="#A5B4FC" filter="url(#glow)">SPEECH AI · Whisper · diarization · call intelligence</text>
+    <text x="600" y="51" text-anchor="middle" class="mono line l4" font-size="17" fill="#D8B4FE" filter="url(#glow)">CLOUD DELIVERY · Docker · AWS · Nginx · TLS</text>
     <text x="600" y="51" text-anchor="middle" class="mono line l5" font-size="17" fill="#F0ABFC" filter="url(#glow)">FROM NOTEBOOK SIGNAL TO PRODUCTION SYSTEM</text>
   </g>
   <rect x="1081" y="35" width="8" height="18" rx="1" fill="#22D3EE" class="blink"/>

@@ -12,7 +12,7 @@
     @keyframes flow{to{stroke-dashoffset:-160}}
   </style>
   <rect width="1200" height="225" rx="24" fill="url(#bg)"/>
-  <text x="48" y="40" class="mono" font-size="14" fill="#67E8F9">// PRODUCTION SIGNAL</text>
+  <text x="48" y="40" class="mono" font-size="14" fill="#67E8F9">PRODUCTION SIGNAL</text>
   <path d="M48 57H1152" stroke="url(#g)" stroke-width="2" class="bar" opacity=".8"/>
 
   <g class="card"><rect x="45" y="78" width="170" height="105" rx="16" fill="#071827" stroke="#22D3EE" stroke-opacity=".55"/><text x="130" y="124" text-anchor="middle" class="sans" font-size="29" font-weight="800" fill="#67E8F9" filter="url(#glow)">6+</text><text x="130" y="153" text-anchor="middle" class="mono" font-size="12" fill="#CBD5E1">AI SYSTEMS SHIPPED</text></g>

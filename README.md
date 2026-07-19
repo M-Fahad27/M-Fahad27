@@ -1,26 +1,36 @@
 <div align="center">
 
 <img src="./assets/hero.svg" width="100%" alt="Muhammad Fahad — AI Engineer animated terminal banner" />
-<img src="./assets/focus.svg" width="100%" alt="Animated AI engineering focus stream" />
+
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=2600&pause=850&color=22D3EE&center=true&vCenter=true&repeat=true&random=false&width=980&height=52&lines=Production+RAG+systems+with+citations%2C+reranking+%26+guardrails;Agentic+workflows+with+tools%2C+memory+%26+human-in-the-loop;Speech+AI+pipelines+with+Whisper+%26+speaker+diarization;Dockerized+AI+services+deployed+on+AWS+behind+Nginx;Turning+AI+prototypes+into+systems+that+survive+production" alt="Animated introduction" />
+</a>
 
 [![Portfolio](https://img.shields.io/badge/PORTFOLIO-fahadai.site-071827?style=for-the-badge&logo=googlechrome&logoColor=22D3EE)](https://www.fahadai.site)
 [![LinkedIn](https://img.shields.io/badge/LINKEDIN-Muhammad_Fahad-071827?style=for-the-badge&logo=linkedin&logoColor=60A5FA)](https://www.linkedin.com/in/fahad2703)
 [![Email](https://img.shields.io/badge/EMAIL-Let's_build-071827?style=for-the-badge&logo=gmail&logoColor=E879F9)](mailto:mfahad2405@gmail.com)
+[![Profile Views](https://komarev.com/ghpvc/?username=M-Fahad27&label=PROFILE+SIGNAL&color=7c3aed&style=for-the-badge)](https://github.com/M-Fahad27)
 
 </div>
 
 ---
 
-## `01 // SYSTEM.IDENTITY`
+## `01 SYSTEM.IDENTITY`
 
 <div align="center">
-  <img src="./assets/identity.svg" width="100%" alt="Animated system identity terminal for Muhammad Fahad" />
+  <img src="./assets/identity.svg" width="100%" alt="Animated identity terminal" />
+  <img src="./assets/focus.svg" width="100%" alt="Animated focus banner" />
+</div>
+
+I work in the **messy middle between a successful AI demo and a dependable production system**. My focus is not only model output—it is retrieval quality, latency, failure recovery, structured responses, observability, deployment, and the human checkpoints that make AI safe enough to operate real workflows.
+
+<div align="center">
   <img src="./assets/impact.svg" width="100%" alt="Animated production impact metrics" />
 </div>
 
 ---
 
-## `02 // FEATURED.SYSTEMS`
+## `02 FEATURED.SYSTEMS`
 
 <table>
 <tr>
@@ -109,7 +119,7 @@ Records candidate speech, transcribes responses, evaluates sentiment and confide
 
 ---
 
-## `03 // ACTIVE.TOOLCHAIN`
+## `03 ACTIVE.TOOLCHAIN`
 
 <div align="center">
 
@@ -146,10 +156,10 @@ Records candidate speech, transcribes responses, evaluates sentiment and confide
 
 ---
 
-## `04 // EXPERIENCE.LOG`
+## `04 EXPERIENCE.LOG`
 
 <div align="center">
-  <img src="./assets/experience.svg" width="100%" alt="Animated experience and education timeline" />
+  <img src="./assets/experience.svg" width="100%" alt="Animated experience timeline" />
 </div>
 
 <details>
@@ -164,31 +174,23 @@ Records candidate speech, transcribes responses, evaluates sentiment and confide
 
 ---
 
-## `05 // GITHUB.TELEMETRY`
+## `05 GITHUB.TELEMETRY`
 
 <div align="center">
-  <img src="./assets/github-telemetry.svg" width="100%" alt="Animated GitHub telemetry dashboard refreshed by GitHub Actions" />
+  <img src="./assets/github-telemetry.svg" width="100%" alt="GitHub telemetry dashboard" />
 </div>
-
-<details>
-<summary><b>How this telemetry stays reliable</b></summary>
-<br/>
-
-The dashboard is generated inside this repository by GitHub Actions using the public GitHub API. It is committed as a local SVG, so the profile no longer depends on fragile public stat-card or trophy servers.
-
-</details>
 
 ### Contribution stream
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/github-contribution-grid-snake.svg" />
-  <img alt="Animated contribution stream" src="./assets/github-contribution-grid-snake-dark.svg" width="100%" />
+  <img alt="Animated contribution snake" src="./assets/github-contribution-grid-snake-dark.svg" width="100%" />
 </picture>
 
 ---
 
-## `06 // COLLABORATION.PROTOCOL`
+## `06 COLLABORATION.PROTOCOL`
 
 I am most useful on problems where AI must do **real operational work**:
 
