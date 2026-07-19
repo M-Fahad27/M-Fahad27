@@ -1,0 +1,24 @@
+<svg width="1200" height="225" viewBox="0 0 1200 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="225"><stop stop-color="#030712"/><stop offset=".55" stop-color="#071426"/><stop offset="1" stop-color="#13071F"/></linearGradient>
+    <linearGradient id="g" x1="45" y1="0" x2="1155" y2="0"><stop stop-color="#22D3EE"/><stop offset=".48" stop-color="#818CF8"/><stop offset="1" stop-color="#D946EF"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <style>
+    .sans{font-family:Inter,Segoe UI,Arial,sans-serif}.mono{font-family:Consolas,'Liberation Mono',monospace}
+    .card{animation:pulse 3s ease-in-out infinite}.c2{animation-delay:.3s}.c3{animation-delay:.6s}.c4{animation-delay:.9s}.c5{animation-delay:1.2s}.c6{animation-delay:1.5s}
+    .bar{stroke-dasharray:22 16;animation:flow 2.8s linear infinite}
+    @keyframes pulse{0%,100%{opacity:.75}50%{opacity:1}}
+    @keyframes flow{to{stroke-dashoffset:-160}}
+  </style>
+  <rect width="1200" height="225" rx="24" fill="url(#bg)"/>
+  <text x="48" y="40" class="mono" font-size="14" fill="#67E8F9">// PRODUCTION SIGNAL</text>
+  <path d="M48 57H1152" stroke="url(#g)" stroke-width="2" class="bar" opacity=".8"/>
+
+  <g class="card"><rect x="45" y="78" width="170" height="105" rx="16" fill="#071827" stroke="#22D3EE" stroke-opacity=".55"/><text x="130" y="124" text-anchor="middle" class="sans" font-size="29" font-weight="800" fill="#67E8F9" filter="url(#glow)">6+</text><text x="130" y="153" text-anchor="middle" class="mono" font-size="12" fill="#CBD5E1">AI SYSTEMS SHIPPED</text></g>
+  <g class="card c2"><rect x="233" y="78" width="170" height="105" rx="16" fill="#09172B" stroke="#38BDF8" stroke-opacity=".55"/><text x="318" y="124" text-anchor="middle" class="sans" font-size="29" font-weight="800" fill="#7DD3FC" filter="url(#glow)">99.4%</text><text x="318" y="153" text-anchor="middle" class="mono" font-size="12" fill="#CBD5E1">PRODUCTION UPTIME</text></g>
+  <g class="card c3"><rect x="421" y="78" width="170" height="105" rx="16" fill="#0D142E" stroke="#818CF8" stroke-opacity=".58"/><text x="506" y="124" text-anchor="middle" class="sans" font-size="29" font-weight="800" fill="#A5B4FC" filter="url(#glow)">&lt;2s</text><text x="506" y="153" text-anchor="middle" class="mono" font-size="12" fill="#CBD5E1">RAG P50 LATENCY</text></g>
+  <g class="card c4"><rect x="609" y="78" width="170" height="105" rx="16" fill="#13112D" stroke="#A78BFA" stroke-opacity=".58"/><text x="694" y="124" text-anchor="middle" class="sans" font-size="29" font-weight="800" fill="#C4B5FD" filter="url(#glow)">55%</text><text x="694" y="153" text-anchor="middle" class="mono" font-size="12" fill="#CBD5E1">QA TIME REDUCED</text></g>
+  <g class="card c5"><rect x="797" y="78" width="170" height="105" rx="16" fill="#18102B" stroke="#C084FC" stroke-opacity=".6"/><text x="882" y="124" text-anchor="middle" class="sans" font-size="29" font-weight="800" fill="#D8B4FE" filter="url(#glow)">100/d</text><text x="882" y="153" text-anchor="middle" class="mono" font-size="12" fill="#CBD5E1">CALLS SCORED</text></g>
+  <g class="card c6"><rect x="985" y="78" width="170" height="105" rx="16" fill="#1D0B25" stroke="#E879F9" stroke-opacity=".6"/><text x="1070" y="124" text-anchor="middle" class="sans" font-size="29" font-weight="800" fill="#F0ABFC" filter="url(#glow)">30s</text><text x="1070" y="153" text-anchor="middle" class="mono" font-size="12" fill="#CBD5E1">INVOICE PROCESSING</text></g>
+</svg>

@@ -1,0 +1,59 @@
+<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="280"><stop stop-color="#030712"/><stop offset=".5" stop-color="#071426"/><stop offset="1" stop-color="#13071F"/></linearGradient>
+    <linearGradient id="g" x1="80" y1="0" x2="1120" y2="0"><stop stop-color="#22D3EE"/><stop offset=".5" stop-color="#818CF8"/><stop offset="1" stop-color="#D946EF"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" stroke="#7DD3FC" stroke-opacity=".06"/></pattern>
+  </defs>
+  <style>
+    .sans{font-family:Inter,Segoe UI,Arial,sans-serif}.mono{font-family:Consolas,'Liberation Mono',monospace}
+    .node{animation:node 3s ease-in-out infinite}.n2{animation-delay:.35s}.n3{animation-delay:.7s}.n4{animation-delay:1.05s}.n5{animation-delay:1.4s}
+    .flow{stroke-dasharray:8 10;animation:flow 2.2s linear infinite}
+    @keyframes node{0%,100%{opacity:.72}50%{opacity:1}}
+    @keyframes flow{to{stroke-dashoffset:-90}}
+  </style>
+  <rect width="1200" height="280" rx="24" fill="url(#bg)"/><rect width="1200" height="280" rx="24" fill="url(#grid)"/>
+  <text x="60" y="46" class="mono" font-size="14" fill="#67E8F9">// HOW I SHIP AI</text>
+  <text x="60" y="76" class="sans" font-size="25" font-weight="700" fill="#F8FAFC">From raw input to reliable production output</text>
+
+  <path d="M188 161H1012" stroke="url(#g)" stroke-width="3" class="flow" opacity=".9"/>
+
+  <g class="node">
+    <rect x="42" y="120" width="188" height="102" rx="18" fill="#071827" stroke="#22D3EE" stroke-opacity=".75"/>
+    <circle cx="78" cy="153" r="12" fill="#22D3EE" fill-opacity=".18" stroke="#22D3EE"/>
+    <text x="104" y="158" class="sans" font-size="16" font-weight="700" fill="#E2E8F0">INGEST</text>
+    <text x="63" y="188" class="mono" font-size="12" fill="#94A3B8">PDF · Audio · Email</text>
+    <text x="63" y="207" class="mono" font-size="12" fill="#67E8F9">OCR / Whisper / APIs</text>
+  </g>
+  <g class="node n2">
+    <rect x="275" y="120" width="188" height="102" rx="18" fill="#0A142B" stroke="#60A5FA" stroke-opacity=".75"/>
+    <circle cx="311" cy="153" r="12" fill="#60A5FA" fill-opacity=".18" stroke="#60A5FA"/>
+    <text x="337" y="158" class="sans" font-size="16" font-weight="700" fill="#E2E8F0">UNDERSTAND</text>
+    <text x="296" y="188" class="mono" font-size="12" fill="#94A3B8">Intent · sentiment</text>
+    <text x="296" y="207" class="mono" font-size="12" fill="#93C5FD">structured extraction</text>
+  </g>
+  <g class="node n3">
+    <rect x="506" y="120" width="188" height="102" rx="18" fill="#10122E" stroke="#818CF8" stroke-opacity=".8"/>
+    <circle cx="542" cy="153" r="12" fill="#818CF8" fill-opacity=".18" stroke="#818CF8"/>
+    <text x="568" y="158" class="sans" font-size="16" font-weight="700" fill="#E2E8F0">REASON</text>
+    <text x="527" y="188" class="mono" font-size="12" fill="#94A3B8">RAG · tools · routing</text>
+    <text x="527" y="207" class="mono" font-size="12" fill="#A5B4FC">Qdrant / BM25 / LLM</text>
+  </g>
+  <g class="node n4">
+    <rect x="737" y="120" width="188" height="102" rx="18" fill="#17102B" stroke="#C084FC" stroke-opacity=".8"/>
+    <circle cx="773" cy="153" r="12" fill="#C084FC" fill-opacity=".18" stroke="#C084FC"/>
+    <text x="799" y="158" class="sans" font-size="16" font-weight="700" fill="#E2E8F0">GUARDRAILS</text>
+    <text x="758" y="188" class="mono" font-size="12" fill="#94A3B8">Validation · citations</text>
+    <text x="758" y="207" class="mono" font-size="12" fill="#D8B4FE">HITL · retries · logs</text>
+  </g>
+  <g class="node n5">
+    <rect x="968" y="120" width="188" height="102" rx="18" fill="#1D0B25" stroke="#E879F9" stroke-opacity=".8"/>
+    <circle cx="1004" cy="153" r="12" fill="#E879F9" fill-opacity=".18" stroke="#E879F9"/>
+    <text x="1030" y="158" class="sans" font-size="16" font-weight="700" fill="#E2E8F0">SHIP</text>
+    <text x="989" y="188" class="mono" font-size="12" fill="#94A3B8">Docker · Nginx · TLS</text>
+    <text x="989" y="207" class="mono" font-size="12" fill="#F0ABFC">AWS · monitoring</text>
+  </g>
+
+  <circle cx="188" cy="161" r="6" fill="#22D3EE" filter="url(#glow)"><animateMotion dur="3.3s" repeatCount="indefinite" path="M188 161H1012"/></circle>
+  <circle cx="188" cy="161" r="4" fill="#D946EF" filter="url(#glow)"><animateMotion dur="3.3s" begin="-1.65s" repeatCount="indefinite" path="M188 161H1012"/></circle>
+</svg>

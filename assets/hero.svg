@@ -1,0 +1,78 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#030712"/>
+      <stop offset="0.5" stop-color="#071426"/>
+      <stop offset="1" stop-color="#12071F"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="220" y1="60" x2="960" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.52" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#D946EF"/>
+    </linearGradient>
+    <radialGradient id="orbA"><stop stop-color="#22D3EE" stop-opacity=".34"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+    <radialGradient id="orbB"><stop stop-color="#D946EF" stop-opacity=".28"/><stop offset="1" stop-color="#D946EF" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#7DD3FC" stroke-opacity=".08"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="22"/></filter>
+    <clipPath id="terminalClip"><rect x="96" y="74" width="1008" height="226" rx="20"/></clipPath>
+  </defs>
+
+  <style>
+    .mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace}
+    .sans{font-family:Inter,Segoe UI,Arial,sans-serif}
+    .floatA{animation:floatA 8s ease-in-out infinite}
+    .floatB{animation:floatB 10s ease-in-out infinite}
+    .pulse{animation:pulse 2.4s ease-in-out infinite}
+    .cursor{animation:blink .85s steps(1,end) infinite}
+    .scan{animation:scan 4.8s linear infinite}
+    .dash{stroke-dasharray:12 10;animation:dash 5s linear infinite}
+    .r1{animation:show 9s infinite}.r2{animation:show2 9s infinite}.r3{animation:show3 9s infinite}
+    @keyframes floatA{0%,100%{transform:translate(0,0)}50%{transform:translate(28px,14px)}}
+    @keyframes floatB{0%,100%{transform:translate(0,0)}50%{transform:translate(-34px,-16px)}}
+    @keyframes pulse{0%,100%{opacity:.42}50%{opacity:1}}
+    @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+    @keyframes scan{0%{transform:translateY(-40px)}100%{transform:translateY(290px)}}
+    @keyframes dash{to{stroke-dashoffset:-220}}
+    @keyframes show{0%,8%{opacity:0}12%,92%{opacity:1}96%,100%{opacity:0}}
+    @keyframes show2{0%,18%{opacity:0}24%,92%{opacity:1}96%,100%{opacity:0}}
+    @keyframes show3{0%,32%{opacity:0}38%,92%{opacity:1}96%,100%{opacity:0}}
+  </style>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="28" fill="url(#grid)"/>
+
+  <g class="floatA" filter="url(#soft)"><circle cx="150" cy="75" r="145" fill="url(#orbA)"/></g>
+  <g class="floatB" filter="url(#soft)"><circle cx="1060" cy="300" r="170" fill="url(#orbB)"/></g>
+
+  <path d="M64 40H345" stroke="url(#neon)" stroke-width="2" class="dash" opacity=".8"/>
+  <path d="M855 320H1136" stroke="url(#neon)" stroke-width="2" class="dash" opacity=".65"/>
+
+  <rect x="96" y="74" width="1008" height="226" rx="20" fill="#020617" fill-opacity=".78" stroke="url(#neon)" stroke-opacity=".7"/>
+  <rect x="96.5" y="74.5" width="1007" height="225" rx="19.5" stroke="#FFF" stroke-opacity=".05"/>
+
+  <g clip-path="url(#terminalClip)">
+    <rect x="96" y="74" width="1008" height="38" fill="#0B1220"/>
+    <circle cx="122" cy="93" r="6" fill="#FB7185"/><circle cx="144" cy="93" r="6" fill="#FBBF24"/><circle cx="166" cy="93" r="6" fill="#34D399"/>
+    <text x="600" y="99" text-anchor="middle" class="mono" font-size="12" fill="#94A3B8">fahad@production-ai:~</text>
+
+    <rect x="97" y="112" width="1006" height="2" fill="url(#neon)" opacity=".6" class="pulse"/>
+    <rect x="100" y="100" width="996" height="3" fill="#22D3EE" opacity=".16" class="scan"/>
+
+    <text x="132" y="148" class="mono r1" font-size="18" fill="#67E8F9">$ whoami</text>
+    <text x="132" y="202" class="sans r2" font-size="52" font-weight="800" letter-spacing="2" fill="url(#neon)" filter="url(#glow)">MUHAMMAD FAHAD</text>
+    <text x="134" y="238" class="mono r3" font-size="18" fill="#E2E8F0">AI ENGINEER // PRODUCTION RAG // AGENTIC SYSTEMS // SPEECH AI</text>
+    <text x="134" y="270" class="mono r3" font-size="14" fill="#94A3B8">Islamabad, Pakistan · UTC+5 · shipping systems that survive the server</text>
+    <rect x="1071" y="254" width="10" height="18" rx="1" fill="#22D3EE" class="cursor"/>
+  </g>
+
+  <g fill="#67E8F9" filter="url(#glow)">
+    <circle cx="55" cy="265" r="2.5" class="pulse"/><circle cx="1143" cy="88" r="2.5" class="pulse"/>
+    <circle cx="1140" cy="242" r="1.8" class="pulse"/><circle cx="80" cy="120" r="1.8" class="pulse"/>
+  </g>
+</svg>
