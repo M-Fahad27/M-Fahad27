@@ -1,15 +1,11 @@
 <div align="center">
 
 <img src="./assets/hero.svg" width="100%" alt="Muhammad Fahad — AI Engineer animated terminal banner" />
-
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=2600&pause=850&color=22D3EE&center=true&vCenter=true&repeat=true&random=false&width=980&height=52&lines=Production+RAG+systems+with+citations%2C+reranking+%26+guardrails;Agentic+workflows+with+tools%2C+memory+%26+human-in-the-loop;Speech+AI+pipelines+with+Whisper+%26+speaker+diarization;Dockerized+AI+services+deployed+on+AWS+behind+Nginx;Turning+AI+prototypes+into+systems+that+survive+production" alt="Animated introduction" />
-</a>
+<img src="./assets/focus.svg" width="100%" alt="Animated AI engineering focus stream" />
 
 [![Portfolio](https://img.shields.io/badge/PORTFOLIO-fahadai.site-071827?style=for-the-badge&logo=googlechrome&logoColor=22D3EE)](https://www.fahadai.site)
 [![LinkedIn](https://img.shields.io/badge/LINKEDIN-Muhammad_Fahad-071827?style=for-the-badge&logo=linkedin&logoColor=60A5FA)](https://www.linkedin.com/in/fahad2703)
 [![Email](https://img.shields.io/badge/EMAIL-Let's_build-071827?style=for-the-badge&logo=gmail&logoColor=E879F9)](mailto:mfahad2405@gmail.com)
-[![Profile Views](https://komarev.com/ghpvc/?username=M-Fahad27&label=PROFILE+SIGNAL&color=7c3aed&style=for-the-badge)](https://github.com/M-Fahad27)
 
 </div>
 
@@ -17,33 +13,8 @@
 
 ## `01 // SYSTEM.IDENTITY`
 
-```python
-class MuhammadFahad:
-    role = "AI Engineer"
-    location = "Islamabad, Pakistan (UTC+5)"
-
-    builds = [
-        "production RAG systems",
-        "agentic workflows and automation pipelines",
-        "speech AI and call-intelligence systems",
-        "LLM applications with validation and human checkpoints",
-    ]
-
-    production_stack = {
-        "runtime": ["Python", "FastAPI", "Docker", "Linux", "Nginx"],
-        "ai": ["LangChain", "LangGraph", "Groq", "Ollama", "Whisper"],
-        "retrieval": ["Qdrant", "pgvector", "Pinecone", "BM25", "reranking"],
-        "cloud": ["AWS EC2", "S3", "Lambda"],
-        "automation": ["n8n", "Gmail API", "ClickUp API", "REST APIs"],
-    }
-
-    current_signal = "Rewriting DocuMind v2 retrieval for higher recall and stronger grounding"
-    principle = "Most AI work fails between the notebook and the server. I build the part that survives."
-```
-
-I work in the **messy middle between a successful AI demo and a dependable production system**. My focus is not only model output—it is retrieval quality, latency, failure recovery, structured responses, observability, deployment, and the human checkpoints that make AI safe enough to operate real workflows.
-
 <div align="center">
+  <img src="./assets/identity.svg" width="100%" alt="Animated system identity terminal for Muhammad Fahad" />
   <img src="./assets/impact.svg" width="100%" alt="Animated production impact metrics" />
 </div>
 
@@ -177,17 +148,9 @@ Records candidate speech, transcribes responses, evaluates sentiment and confide
 
 ## `04 // EXPERIENCE.LOG`
 
-```text
-[CURRENT] AI Engineer · Veeivs · On-site
-          Production RAG, meeting intelligence, speech pipelines,
-          agentic automation, Dockerized cloud deployment.
-
-[CURRENT] AI Developer · Provoxio Ltd. · Project-based / Remote
-          Speak-Align call QA: diarization, transcription, compliance scoring,
-          timestamped violations and automated operations reporting.
-
-[2023—2027] BSc Computer Science · NUML Islamabad
-```
+<div align="center">
+  <img src="./assets/experience.svg" width="100%" alt="Animated experience and education timeline" />
+</div>
 
 <details>
 <summary><b>Verified learning signal</b></summary>
@@ -204,24 +167,23 @@ Records candidate speech, transcribes responses, evaluates sentiment and confide
 ## `05 // GITHUB.TELEMETRY`
 
 <div align="center">
-
-<img height="178" src="https://github-readme-stats.vercel.app/api?username=M-Fahad27&show_icons=true&include_all_commits=true&count_private=false&hide_border=true&bg_color=00000000&title_color=22D3EE&text_color=C9D1D9&icon_color=A78BFA&ring_color=D946EF" alt="Muhammad Fahad GitHub stats" />
-<img height="178" src="https://github-readme-stats.vercel.app/api/top-langs/?username=M-Fahad27&layout=compact&langs_count=8&hide_border=true&bg_color=00000000&title_color=22D3EE&text_color=C9D1D9" alt="Top languages" />
-
-<img src="https://streak-stats.demolab.com?user=M-Fahad27&theme=transparent&hide_border=true&ring=22D3EE&fire=D946EF&currStreakLabel=A78BFA&sideLabels=C9D1D9&dates=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC" alt="GitHub contribution streak" />
-
-<img src="https://github-profile-trophy.vercel.app/?username=M-Fahad27&theme=algolia&no-frame=true&no-bg=true&margin-w=8&column=7" width="100%" alt="GitHub trophies" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=M-Fahad27&bg_color=00000000&color=94A3B8&line=22D3EE&point=D946EF&area=true&hide_border=true&custom_title=Engineering%20Activity%20%2F%2F%20Last%2031%20Days" width="100%" alt="GitHub activity graph" />
-
+  <img src="./assets/github-telemetry.svg" width="100%" alt="Animated GitHub telemetry dashboard refreshed by GitHub Actions" />
 </div>
+
+<details>
+<summary><b>How this telemetry stays reliable</b></summary>
+<br/>
+
+The dashboard is generated inside this repository by GitHub Actions using the public GitHub API. It is committed as a local SVG, so the profile no longer depends on fragile public stat-card or trophy servers.
+
+</details>
 
 ### Contribution stream
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/M-Fahad27/M-Fahad27/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M-Fahad27/M-Fahad27/output/github-contribution-grid-snake.svg" />
-  <img alt="Animated contribution snake" src="https://raw.githubusercontent.com/M-Fahad27/M-Fahad27/output/github-contribution-grid-snake-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/github-contribution-grid-snake.svg" />
+  <img alt="Animated contribution stream" src="./assets/github-contribution-grid-snake-dark.svg" width="100%" />
 </picture>
 
 ---

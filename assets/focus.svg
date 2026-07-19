@@ -1,0 +1,26 @@
+<svg width="1200" height="88" viewBox="0 0 1200 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="88"><stop stop-color="#030712"/><stop offset=".52" stop-color="#071426"/><stop offset="1" stop-color="#13071F"/></linearGradient>
+    <linearGradient id="g" x1="130" y1="0" x2="1070" y2="0"><stop stop-color="#22D3EE"/><stop offset=".5" stop-color="#818CF8"/><stop offset="1" stop-color="#D946EF"/></linearGradient>
+    <filter id="glow" x="-30%" y="-100%" width="160%" height="300%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="clip"><rect x="120" y="15" width="960" height="58" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .mono{font-family:Consolas,'Liberation Mono',monospace}.line{opacity:0;animation:rotate 15s ease-in-out infinite}.l2{animation-delay:3s}.l3{animation-delay:6s}.l4{animation-delay:9s}.l5{animation-delay:12s}
+    .scan{animation:scan 3.6s linear infinite}.blink{animation:blink .85s steps(1,end) infinite}.dash{stroke-dasharray:9 10;animation:dash 2.5s linear infinite}
+    @keyframes rotate{0%{opacity:0;transform:translateY(15px)}4%,16%{opacity:1;transform:translateY(0)}20%,100%{opacity:0;transform:translateY(-15px)}}
+    @keyframes scan{from{transform:translateX(-180px)}to{transform:translateX(1150px)}}@keyframes blink{0%,48%{opacity:1}49%,100%{opacity:0}}@keyframes dash{to{stroke-dashoffset:-95}}
+  </style>
+  <rect width="1200" height="88" rx="20" fill="url(#bg)"/>
+  <rect x="10" y="10" width="1180" height="68" rx="17" stroke="url(#g)" stroke-opacity=".45"/>
+  <path d="M35 44H1165" stroke="url(#g)" stroke-width="2" opacity=".18" class="dash"/>
+  <g clip-path="url(#clip)">
+    <rect x="-180" y="14" width="160" height="60" fill="url(#g)" opacity=".08" class="scan"/>
+    <text x="600" y="51" text-anchor="middle" class="mono line" font-size="17" fill="#67E8F9" filter="url(#glow)">PRODUCTION RAG // citations · reranking · guardrails</text>
+    <text x="600" y="51" text-anchor="middle" class="mono line l2" font-size="17" fill="#93C5FD" filter="url(#glow)">AGENTIC WORKFLOWS // tools · memory · human checkpoints</text>
+    <text x="600" y="51" text-anchor="middle" class="mono line l3" font-size="17" fill="#A5B4FC" filter="url(#glow)">SPEECH AI // Whisper · diarization · call intelligence</text>
+    <text x="600" y="51" text-anchor="middle" class="mono line l4" font-size="17" fill="#D8B4FE" filter="url(#glow)">CLOUD DELIVERY // Docker · AWS · Nginx · TLS</text>
+    <text x="600" y="51" text-anchor="middle" class="mono line l5" font-size="17" fill="#F0ABFC" filter="url(#glow)">FROM NOTEBOOK SIGNAL TO PRODUCTION SYSTEM</text>
+  </g>
+  <rect x="1081" y="35" width="8" height="18" rx="1" fill="#22D3EE" class="blink"/>
+</svg>

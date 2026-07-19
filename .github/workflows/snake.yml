@@ -1,13 +1,9 @@
-name: Generate contribution snake
+name: Refresh contribution stream
 
 on:
   schedule:
     - cron: "17 0 * * *"
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/snake.yml"
 
 permissions:
   contents: write
@@ -17,7 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Generate animated contribution snake
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate contribution snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -26,10 +25,19 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Publish animation to output branch
-        uses: crazy-max/ghaction-github-pages@v5
-        with:
-          build_dir: dist
-          target_branch: output
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Copy generated files into local assets
+        run: |
+          cp dist/github-contribution-grid-snake.svg assets/github-contribution-grid-snake.svg
+          cp dist/github-contribution-grid-snake-dark.svg assets/github-contribution-grid-snake-dark.svg
+
+      - name: Commit refreshed contribution stream
+        run: |
+          if git diff --quiet -- assets/github-contribution-grid-snake.svg assets/github-contribution-grid-snake-dark.svg; then
+            echo "Contribution stream is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-contribution-grid-snake.svg assets/github-contribution-grid-snake-dark.svg
+          git commit -m "chore: refresh contribution stream [skip ci]"
+          git push
